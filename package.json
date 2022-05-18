@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vite",
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build && rm -rf docs && mv build docs",
     "preview": "vite preview",
     "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
+    "deploy":"gh-pages -d build && rm -rf docs && mv build docs"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
