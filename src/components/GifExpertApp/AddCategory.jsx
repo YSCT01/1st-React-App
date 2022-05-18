@@ -15,7 +15,7 @@ const AddCategory = ({setCat}) => {
       e.preventDefault();
       if(value.trim().length>1){
         setValidate("");
-        setCat(categories =>[ value, ...categories]);
+        setCat(categories =>[ value, categories]);
         setValue("");
       }
       else{
